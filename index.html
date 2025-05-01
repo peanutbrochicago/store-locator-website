@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      IMPORTANT:
+      Make sure your domain (e.g., yourdomain.com) is whitelisted in the Google Cloud Console:
+      - Go to https://console.cloud.google.com/apis/credentials
+      - Click on your API key
+      - Under "Application Restrictions," choose "HTTP referrers (web sites)"
+      - Add your domain (e.g., https://yourdomain.com/*)
+      This ensures the Maps API works only on approved domains and protects your key from misuse.
+    -->
+    <title>Locator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+      const CONFIGURATION = {
+        "locations": [
+          {"title":"1659 W Huron St","address1":"1659 W Huron St","address2":"Chicago, IL 60622, USA","coords":{"lat":41.8940716678882,"lng":-87.66948590674592},"placeId":"ChIJ2Wj88zItDogRHVfXRncA_iA"},
+          {"title":"Foxtrot Market","address1":"23 W Maple St","address2":"Chicago, IL 60610, USA","coords":{"lat":41.90177545151125,"lng":-87.62930929325408},"placeId":"ChIJY3iHgZrTD4gRWZNFkiiWsqE"},
+          {"title":"Foxtrot Market","address1":"1562 N Wells St","address2":"Chicago, IL 60610, USA","coords":{"lat":41.911016142237905,"lng":-87.6349015067459},"placeId":"ChIJF3iYAjDTD4gRVf20Et5NiD0"},
+          {"title":"Foxtrot Market","address1":"1722 W Division St","address2":"Chicago, IL 60622, USA","coords":{"lat":41.90354719609513,"lng":-87.67099636441803},"placeId":"ChIJIQiI_c7SD4gRwIBDKucZ1Mo"},
+          {"title":"Foxtrot Market","address1":"171 N Green St","address2":"Chicago, IL 60607, USA","coords":{"lat":41.885255236806756,"lng":-87.64829929325407},"placeId":"ChIJJQqMT_AtDogRrncfzqwYPiw"},
+          {"title":"Foxtrot Market","address1":"401 N Wells St","address2":"Chicago, IL 60654, USA","coords":{"lat":41.889890321182094,"lng":-87.63376696441803},"placeId":"ChIJCegAYZctDogRprokbdDyItM"},
+          {"title":"Foxtrot Market","address1":"1576 N Milwaukee Ave","address2":"Chicago, IL 60622, USA","coords":{"lat":41.91006550604418,"lng":-87.67720396441804},"placeId":"ChIJPanqPBvTD4gRwpvYcZ3zatE"},
+          {"title":"The Eco Flamingo","address1":"4750 N Rockwell St","address2":"Chicago, IL 60625, USA","coords":{"lat":41.96828042469772,"lng":-87.69400146441802},"placeId":"ChIJO30BT2LTD4gRu79IeQppLCg"},
+          {"title":"West Loop Market","address1":"1222 W Madison St","address2":"Chicago, IL 60607, USA","coords":{"lat":41.88182159086537,"lng":-87.65807826441802},"placeId":"ChIJOzI4YbktDogR4Y_gXO3fh0A"},
+          {"title":"West Loop Market","address1":"939 W Washington Blvd","address2":"Chicago, IL 60607, USA","coords":{"lat":41.882996626353254,"lng":-87.65116629325408},"placeId":"ChIJZcgGmd4tDogRXKWioJcwGCs"},
+          {"title":"Go Grocer","address1":"2060 W North Ave","address2":"Chicago, IL 60647, USA","coords":{"lat":41.910733474065175,"lng":-87.67984016441801},"placeId":"ChIJ04MGf-TTD4gR_He_6O5VN2c"},
+          {"title":"Go Grocer","address1":"1255 S Michigan Ave","address2":"Chicago, IL 60605, USA","coords":{"lat":41.86603080862867,"lng":-87.62389923558197},"placeId":"ChIJ5WFrUJssDogR7gAfCBwvMHA"},
+          {"title":"Go Grocer","address1":"521 W Diversey Pkwy","address2":"Chicago, IL 60614, USA","coords":{"lat":41.932701952077934,"lng":-87.64215243558198},"placeId":"ChIJVcJu_rnTD4gREOLjtopFUKQ"},
+          {"title":"Go Grocer","address1":"205 S Peoria St","address2":"Chicago, IL 60607, USA","coords":{"lat":41.87908517038698,"lng":-87.64940266441803},"placeId":"ChIJ0-ge-i4tDogREDg_A2SRt6Y"},
+          {"title":"Go Grocer MKE","address1":"415 E Menomonee St","address2":"Milwaukee, WI 53202, USA","coords":{"lat":43.03145675330679,"lng":-87.9052968509262},"placeId":"ChIJ1w_SsyMZBYgRfUCyQUHtIcI"}
+        ],
+        "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+        "mapsApiKey": "AIzaSyD0v8GbdgSf8iAaaVTsUSKQZS8VEqXozxU",
+        "capabilities": {"input":true,"autocomplete":true,"directions":false,"distanceMatrix":true,"details":false,"actions":false}
+      };
+    </script>
+  </head>
+  <body>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+    <gmpx-api-loader key="AIzaSyD0v8GbdgSf8iAaaVTsUSKQZS8VEqXozxU" solution-channel="GMP_QB_locatorplus_v11_cABD"></gmpx-api-loader>
+    <gmpx-store-locator map-id="14b2569afbe597db"></gmpx-store-locator>
+  </body>
+</html>
